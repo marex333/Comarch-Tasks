@@ -47,6 +47,17 @@ public class Task1 {
         }
     }
     private static int[] selectionSort(int[] table) {
+        //main loop
+        for (int i = 0; i < table.length - 1; i++) {
+            //inner loop - starts from i+1 to avoid finding same number
+            for (int j = i + 1; j < table.length; j++) {
+                if (table[j] < table[i]) {
+                    int temp = table[i];
+                    table[i] = table[j];
+                    table[j] = temp;
+                }
+            }
+        }
         return table;
     }
     private static int[] insertionSort(int[] table) {
