@@ -18,8 +18,23 @@
         6. Print tab2
 
         */
-public class Task9 {
+public class Task9 extends Utils {
+    private static int tabSize = 10;
+
     public static void main(String[] args) {
+        // 1.
+        int[] tab1 = createTab(tabSize);
+        // 2.
+        tab1 = fillTabWithRandoms(tab1, 10);
+        // 3.
+        int[] tab2 = createTab(tab1.length);
+        // 4
+        tab2 = reverseFillTabWithAnother(tab1);
+        // 5.
+        showTab(tab1);
+        System.out.println();
+        // 6.
+        showTab(tab2);
 
     }
 }
