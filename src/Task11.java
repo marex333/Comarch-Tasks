@@ -15,7 +15,26 @@
 
         */
 public class Task11 extends Utils {
-    public static void main(String[] args) {
+    private static int tabSize = 10;
+    private static int randomsSize = 100;
 
+    public static void main(String[] args) {
+        // 1.
+        int[] tab1 = createTab(tabSize);
+        int[] tab2 = createTab(tabSize);
+        int[] tab3 = createTab(tabSize);
+        // 2.
+        tab1 = fillTabWithRandoms(tab1, randomsSize);
+        tab2 = fillTabWithRandoms(tab2, randomsSize);
+        // 3.
+        for (int i = 0; i < tabSize; i++) {
+            tab3[i] = tab1[i] + tab2[i];
+        }
+        // 4.
+        showTab(tab1);
+        System.out.println();
+        showTab(tab2);
+        System.out.println();
+        showTab(tab3);
     }
 }
