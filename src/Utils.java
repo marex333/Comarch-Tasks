@@ -50,5 +50,9 @@ public class Utils {
             System.out.println();
         }
     }
+    public static int tossDice() {
+        Random random = new Random();
+        return random.nextInt(7);
+    }
 
 }
