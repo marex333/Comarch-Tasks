@@ -13,9 +13,7 @@
     5. Show sorted tab
     * */
 
-import java.util.Random;
-
-public class Task1 {
+public class Task1 extends Utils {
     private static int tabSize = 10;
     // change sorter
     private static boolean selectionSortRatherThanInsertion = true;
@@ -33,22 +31,6 @@ public class Task1 {
         // 5.
         System.out.println("====================== New Tab ======================");
         showTab(tab);
-    }
-
-    private static int[] createTab(int size) {
-        return new int[size];
-    }
-    private static int[] fillTabWithRandoms(int[] tab, int randomMax) {
-        Random random = new Random();
-        for (int i = 0; i < tab.length; i++) {
-            tab[i] = random.nextInt(randomMax);
-        }
-        return tab;
-    }
-    private static void showTab(int[] tab) {
-        for (int element : tab) {
-            System.out.println(element);
-        }
     }
     // smallest -> biggest
     private static int[] selectionSort(int[] table) {
