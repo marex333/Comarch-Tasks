@@ -25,9 +25,17 @@ public class Utils {
     }
 
     public static void showTab(int[] tab) {
-        for (int element : tab) {
-            System.out.println(element);
-        }
+        for (int element : tab) System.out.println(element);
+    }
+    public static void showTab(int[] tab, boolean noNewLine) {
+        if(noNewLine) {
+            for (int element : tab) System.out.print(element + " ");
+
+        } else showTab(tab);
+    }
+    public static void showTab(int[][] tab) {
+        for (int[] element : tab) showTab(element, true);
+        System.out.println();
     }
 
 
