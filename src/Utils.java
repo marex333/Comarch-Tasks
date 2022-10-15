@@ -9,6 +9,7 @@ public class Utils {
     }
 
     public static int[] fillTabWithRandoms(int[] tab, int randomMax) {
+        randomMax++;
         Random random = new Random();
         for (int i = 0; i < tab.length; i++) {
             tab[i] = random.nextInt(randomMax);
@@ -16,6 +17,7 @@ public class Utils {
         return tab;
     }
     public static int[][] fillTabWithRandoms(int[][] tab, int randomMax) {
+        randomMax++;
         for (int i = 0; i < tab.length - 1; i++) {
             tab[i] = fillTabWithRandoms(tab[i], randomMax);
         }
