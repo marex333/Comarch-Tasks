@@ -34,8 +34,11 @@ public class Utils {
         } else showTab(tab);
     }
     public static void showTab(int[][] tab) {
-        for (int[] element : tab) showTab(element, true);
-        System.out.println();
+        for (int[] element : tab) {
+            showTab(element, true);
+            System.out.println();
+        }
+
     }
 
 
