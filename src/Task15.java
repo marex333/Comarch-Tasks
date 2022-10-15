@@ -3,10 +3,6 @@
         jak w monopoly). Program ma wykońać 10 000 rzutów i wypisać liczbę która wypadała najczęściej
         (ta liczba jest occzywiście sumą oczek na dwóch kościach które symulujemy.
 */
-
-
-       import java.util.Random;
-
        public class Task15 extends Utils{
     private static int repeats = 1000;
 
