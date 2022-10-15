@@ -22,7 +22,18 @@ public class Task4 extends Utils {
         tab = fillTabWithRandoms(tab,randomMax);
         // 3.
         showTab(tab);
+        // 4.
+        System.out.println(findLowest(tab));
 
 
+    }
+    private static int findLowest (int[][] tab) {
+        int lowest = tab[0][0];
+        for (int i = 0; i < tab.length; i++) {
+            for (int j = 0; j < tab[0].length; j++) {
+                if (tab[i][j] < lowest) lowest = tab[i][j];
+            }
+        }
+        return lowest;
     }
 }

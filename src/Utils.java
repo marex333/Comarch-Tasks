@@ -18,7 +18,7 @@ public class Utils {
     }
     public static int[][] fillTabWithRandoms(int[][] tab, int randomMax) {
         randomMax++;
-        for (int i = 0; i < tab.length - 1; i++) {
+        for (int i = 0; i < tab.length; i++) {
             tab[i] = fillTabWithRandoms(tab[i], randomMax);
         }
         return tab;
