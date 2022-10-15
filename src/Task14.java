@@ -11,7 +11,7 @@
 
 public class Task14 extends Utils{
     private static int weight = 70;
-    private static int height = 190;
+    private static double height = 1.90;
 
     public static void main(String[] args) {
         System.out.println(BMICalculator(weight, height));
@@ -19,6 +19,10 @@ public class Task14 extends Utils{
 
     private static double BMICalculator(double weight, double height) {
 
-        return weight /  (100/ height * 100 / height);
+        double bmi = weight / (height * height);
+        if (bmi < 18.5) System.out.println("Niedowaga");
+        if (bmi > 25) System.out.println("Nadwaga");
+        else System.out.println("Waga odpowiednia");
+        return bmi;
     }
 }
