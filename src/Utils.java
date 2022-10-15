@@ -4,11 +4,20 @@ public class Utils {
     public static int[] createTab(int size) {
         return new int[size];
     }
+    public static int[][] createTab(int size1, int size2) {
+        return new int[size1][size2];
+    }
 
     public static int[] fillTabWithRandoms(int[] tab, int randomMax) {
         Random random = new Random();
         for (int i = 0; i < tab.length; i++) {
             tab[i] = random.nextInt(randomMax);
+        }
+        return tab;
+    }
+    public static int[][] fillTabWithRandoms(int[][] tab, int randomMax) {
+        for (int i = 0; i < tab.length - 1; i++) {
+            tab[i] = fillTabWithRandoms(tab[i], randomMax);
         }
         return tab;
     }
@@ -18,4 +27,6 @@ public class Utils {
             System.out.println(element);
         }
     }
+
+
 }
