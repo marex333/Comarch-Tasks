@@ -17,6 +17,9 @@ import java.util.Random;
 
 public class Task1 {
     private static int tabSize = 10;
+    // change sorter
+    private static boolean selectionSortRatherThanInsertion = true;
+
     public static void main(String[] args) {
         // 1.
         int[] tab = createTab(tabSize);
@@ -25,12 +28,13 @@ public class Task1 {
         // 3.
         showTab(tab);
         // 4.
-        tab = selectionSort(tab);
-        tab = insertionSort(tab);
+        if (selectionSortRatherThanInsertion) tab = selectionSort(tab);
+        else tab = insertionSort(tab);
         // 5.
         System.out.println("====================== New Tab ======================");
         showTab(tab);
     }
+
     private static int[] createTab(int size) {
         return new int[size];
     }
@@ -46,6 +50,7 @@ public class Task1 {
             System.out.println(element);
         }
     }
+    // smallest -> biggest
     private static int[] selectionSort(int[] table) {
         //main loop
         for (int i = 0; i < table.length - 1; i++) {
@@ -61,9 +66,25 @@ public class Task1 {
         return table;
     }
     private static int[] insertionSort(int[] table) {
+        // main loop
+        for (int i = 0; i < table.length - 1; i++) {
+            boolean flagToStartOver = false;
+            // check correct set
+            if (table[i] > table[i + 1]) {
+                // inner reverse loop - swap until in correct set
+                for (;i >= 0 && (table[i] > table[i + 1]) ; i--) {
+                    int temp = table[i + 1];
+                    table[i + 1] = table[i];
+                    table[i] = temp;
+                }
+                // found incorrect set
+                flagToStartOver = true;
+            }
+            // reset main loop
+            if (flagToStartOver) i = 0;
+        }
         return table;
         }
-
 
 
 
