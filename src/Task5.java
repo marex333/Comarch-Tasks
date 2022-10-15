@@ -10,14 +10,35 @@
         liczb 0 - 20.
         */
 
-      /*
-      PLAN
-      1. Create tab[10]
-      2. Fill tab with randoms (next number is even or higher than previous) - (0 - 20)
-      3. Print tab
-      */
-public class Task5 extends Utils {
-    public static void main(String[] args) {
+      import java.util.Random;
 
+      /*
+            PLAN
+            1. Create tab[10]
+            2. Fill tab with randoms (next number is even or higher than previous) - (0 - 20)
+            3. Print tab
+            */
+public class Task5 extends Utils {
+    static int tabSize = 10;
+    static int randomMax = 20;
+
+    public static void main(String[] args) {
+        // 1.
+        int[] tab = createTab(tabSize);
+        // 2.
+        tab = fillTabWithCustomRandoms(tab);
+        // 3.
+        showTab(tab);
+    }
+    private static int[] fillTabWithCustomRandoms (int[] tab) {
+        Random random = new Random();
+        for (int i = 0; i < tab.length; i++) {
+            if (i != 0) {
+                do {
+                    tab[i] = random.nextInt(randomMax + 1);
+                } while (tab[i] < tab[i - 1]);
+            } else tab[i] = random.nextInt(randomMax + 1);
+        }
+        return tab;
     }
 }
