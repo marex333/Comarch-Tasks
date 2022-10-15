@@ -11,9 +11,9 @@
        4. Print lowest number
        */
 public class Task4 extends Utils {
-    static int size1 = 5;
-    static int size2 = 5;
-    static int randomMax = 100;
+    private static int size1 = 5;
+    private static int size2 = 5;
+    private static int randomMax = 100;
 
     public static void main(String[] args) {
         // 1.

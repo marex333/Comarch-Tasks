@@ -25,7 +25,7 @@
 
 
 public class Task6 {
-    static int w = 11;
+    private static int w = 11;
 
     public static void main(String[] args) {
         printChristmassTree(w);

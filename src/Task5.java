@@ -19,8 +19,8 @@
             3. Print tab
             */
 public class Task5 extends Utils {
-    static int tabSize = 10;
-    static int randomMax = 20;
+    private static int tabSize = 10;
+    private static int randomMax = 20;
 
     public static void main(String[] args) {
         // 1.
