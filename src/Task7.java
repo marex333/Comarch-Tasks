@@ -12,7 +12,26 @@
 */
 
 public class Task7 extends Utils{
-    public static void main(String[] args) {
+    static int tabSize = 10;
+    static int randomsMax = 10;
+    static int copyToCount = 5;
 
+    public static void main(String[] args) {
+        // 1.
+        int[] tab = createTab(10);
+        // 2.
+        tab = fillTabWithRandoms(tab, randomsMax);
+        // 3.
+        showTab(tab);
+        // 4.
+        System.out.println("\nCopies of " + copyToCount + ": " + calculateCopy(tab, copyToCount));
+    }
+
+    private static int calculateCopy (int[] tab, int copyToCount) {
+        int copy = 0;
+        for (int element : tab) {
+            if (element == copyToCount) copy++;
+        }
+        return copy;
     }
 }
