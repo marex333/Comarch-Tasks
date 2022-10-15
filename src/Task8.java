@@ -20,10 +20,15 @@
     15 Fizz Buzz
     16
     itd.
-
-
 */
 public class Task8 extends Utils{
+    private static int numbersSize = 99;
     public static void main(String[] args) {
+        for (int i = 0; i <= numbersSize; i++) {
+            String print = Integer.toString(i);
+            if (i % 3 == 0) print += " Fizz";
+            if (i % 5 == 0) print += " Buzz";
+                System.out.println(print);
+        }
     }
 }
