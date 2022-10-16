@@ -1,4 +1,4 @@
-/*      3.Napisz program generujący jednowymiarową tablicę liczb (10 elementów) w której
+package firstweektasks;/*      3.Napisz program generujący jednowymiarową tablicę liczb (10 elementów) w której
         każda liczba jest podzielna przez 7. Wynikiem działania programu ma być wyświetlona tablica. Zakres losowych
         liczb 0 - 100.
 */

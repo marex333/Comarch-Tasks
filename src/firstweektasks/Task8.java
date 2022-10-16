@@ -1,3 +1,5 @@
+package firstweektasks;
+
 /*
      8.Wypisz na ekranie
      liczby od 0 do 99. Jeśli liczba jest podzilena przez 3 obok liczny dopisz "Fizz", jeśli liczba jest podzielna przez 5

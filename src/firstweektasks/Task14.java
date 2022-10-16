@@ -1,4 +1,4 @@
-
+package firstweektasks;
        /*
         14.Napisz program który ma dwie zmienne:
         weight - waga, liczba całkowita

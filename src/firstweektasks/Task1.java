@@ -1,4 +1,4 @@
-/*1.
+package firstweektasks;/*1.
    Napisz program generujący jednowymiarową tablice liczb (10 elementów).
    Program powinien sortować tablicę przy pomocy algorytmu sortowania przez wstawianie lub przez wybieranie
    (do wyboru, dla chętnych oba algorytmy). Wynikiem działania programu ma być wyświetlona tablica przed

@@ -1,4 +1,4 @@
-      /*
+package firstweektasks;      /*
         13.Napisz probram który ma 3 zmienna a, b i c.
         Te zmienne to długości boków trójkąta. Program ma sprawdzić czy z podanych boków da się zbudować trójkąt.
         Jeśli się da to program ma wypisać na ekranie true (w przeciwnym wypadku false) i obliczyć obwód tego trójkąta.

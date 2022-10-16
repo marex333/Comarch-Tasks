@@ -1,4 +1,4 @@
-      /*
+package firstweektasks;      /*
        5.Napisz program
         generujący jednowymiarową tablicę (10 elementów) liczb w której każda liczba jest losowa ale nie jest mniejsza
         niż poprzednia liczba. Przykłady:

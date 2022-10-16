@@ -1,4 +1,4 @@
-        /*
+package firstweektasks;        /*
         9.Napisz program który generuje jednowymiarową tablicę (10 elementów) losowych liczb. Program ma wygenerować druga
         tablicę która jest pierwszą tablicą w odwrotnaj kolejności. Wynikiem działania programu ma być wyświetlona pierwsza i
         druga tablica. Przykłady:

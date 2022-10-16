@@ -1,4 +1,4 @@
-/*
+package firstweektasks;/*
         6.Napisz program w którym jest zmienna 'w'. Zmienna ta oznacza wysokość choinki.
         Program wyświetla na ekranie wypisaną choinkę o danej wysokości.
         Przykłady:

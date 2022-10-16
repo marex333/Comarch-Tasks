@@ -1,4 +1,4 @@
-        /*6.
+package firstweektasks;        /*6.
         Napisz program
         który generuje tablicę liczb 0 i 1 (10 elementów). Program ma sprawdzić czy tablica jest symetryczna -
         pierwszy element taki jak ostatni, drugi taki jak przedostatni itd. Wynikime działania programu ma być

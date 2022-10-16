@@ -1,4 +1,4 @@
-/*      11.Napisz program który losuje dwaie tablice (10 elementów, zakres 0 - 100).
+package firstweektasks;/*      11.Napisz program który losuje dwaie tablice (10 elementów, zakres 0 - 100).
         Wynikiem działania programu mają być wypisane obie tablice, oraz trzecia tablica w które każdy element jest sumą
         odpowiadających elementów z dwóch pierwszych tablic.
         Przykład:
